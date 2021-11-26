@@ -2,7 +2,7 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.view.View import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 //        textView.text = mainViewModel.counter.toString()
 
         button1.setOnClickListener{
-//            increment()
-//            textView.text= mainViewModel.counter.toString()
+            Toast.makeText(this,"hello world", Toast.LENGTH_SHORT).show()
+
             mainViewModel.updateLiveData()
 
         }
