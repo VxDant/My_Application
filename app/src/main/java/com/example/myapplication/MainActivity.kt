@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         button1.setOnClickListener{
             Toast.makeText(this,"hello world", Toast.LENGTH_SHORT).show()
-//            increment()
-//            textView.text= mainViewModel.counter.toString()
+
             mainViewModel.updateLiveData()
 
         }
